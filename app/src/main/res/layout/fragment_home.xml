@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".navigationBar.homeFragment">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:id="@+id/headerHome"
+            android:padding="3dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_inspection_50dp" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:textStyle="italic"
+                android:textColor="#000000"
+                android:text="@string/app_name"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <ScrollView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="normal"
+                    android:textSize="20sp"
+                    android:text="Dashboard"/>
+                <View
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/colorAbu"/>
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="3dp"
+                    app:cardBackgroundColor="@color/colorAbu">
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="450dp">
+
+                        <!-- TODO dashboard dari home -->
+
+                    </android.support.constraint.ConstraintLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="normal"
+                    android:textSize="20sp"
+                    android:text="@string/settings"/>
+                <View
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/colorAbu"/>
+                <android.support.constraint.ConstraintLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/bg_rounded_beranda">
+
+                    <!-- TODO settings dari home -->
+
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/database_used"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/imageView4"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/selectedDatabase"
+                        android:textStyle="italic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:hint="@string/example_db"
+                        app:layout_constraintStart_toStartOf="@+id/textView"
+                        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                    <TextView
+                        android:id="@+id/selectDatabase"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:text="@string/change"
+                        android:background="@drawable/bg_white_btn"
+                        app:layout_constraintBottom_toBottomOf="@+id/selectedDatabase"
+                        app:layout_constraintStart_toEndOf="@+id/selectedDatabase"
+                        app:layout_constraintTop_toTopOf="@+id/selectedDatabase" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/ic_database_24dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/textView" />
+                </android.support.constraint.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

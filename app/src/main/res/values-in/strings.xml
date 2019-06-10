@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DO Tracking</string>
+    <string name="login">Masuk</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="dont_have_account">Tidak memiliki akun ?</string>
+    <string name="sign_up">Daftar</string>
+    <string name="database">Database</string>
+    <string name="transaction">Transaksi</string>
+    <string name="synchronize">Sinkronisasi</string>
+    <string name="courier">Kurir</string>
+    <string name="report">Laporan</string>
+    <string name="home">Awal</string>
+    <string name="settings">Pengaturan</string>
+    <string name="database_used">Database yang digunakan</string>
+    <string name="example_db">Contoh.db</string>
+    <string name="change">Ubah</string>
+    <string name="set_ip_address">Set alamat IP</string>
+</resources>

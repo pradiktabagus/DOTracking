@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/colorWhite90"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorWhite90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/judul"
+        tools:inputType="text" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:backgroundTint="@color/colorWhite90"
+        android:hint="@string/password"
+        android:textColorHint="@color/colorWhite90"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/app_name"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <LinearLayout
+        android:id="@+id/layoutSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvSignUp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dont_have_account"
+            android:textColor="@color/colorWhite90" />
+
+        <TextView
+            android:id="@+id/tvSignUp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/sign_up"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/ic_email_black_50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        app:layout_constraintEnd_toStartOf="@+id/editText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText2"
+        app:layout_constraintEnd_toStartOf="@+id/editText2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText2"
+        android:src="@drawable/ic_vpn_key_black_50dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toEndOf="@+id/judul"
+        app:layout_constraintStart_toStartOf="@+id/judul"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_inspection_100dp_white" />
+
+</android.support.constraint.ConstraintLayout>

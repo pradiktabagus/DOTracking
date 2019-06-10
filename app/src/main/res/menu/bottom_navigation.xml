@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home_24dp"/>
+
+    <item
+        android:id="@+id/courier"
+        android:title="@string/courier"
+        android:icon="@drawable/ic_courier_24dp"/>
+
+    <item
+        android:id="@+id/transaction"
+        android:title="@string/transaction"
+        android:icon="@drawable/ic_buy_24dp"/>
+    <item
+        android:id="@+id/syncronize"
+        android:title="@string/synchronize"
+        android:icon="@drawable/ic_sync_black_24dp"/>
+    <item
+        android:id="@+id/report"
+        android:title="@string/report"
+        android:icon="@drawable/ic_diagram_24dp"/>
+</menu>
